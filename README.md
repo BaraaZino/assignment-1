@@ -46,3 +46,8 @@ A single-page personal portfolio highlighting experience, projects, awards, and 
 ## Notes
 - The contact form currently performs client-side validation only; connect it to a backend or service (e.g., Formspree, Netlify Forms) for real submissions.
 - Supplementary write-ups or reports for the assignment live under `docs/`.
+
+
+
+## Deployed Webpage on GitHub
+- https://baraazino.github.io/assignment-1/
