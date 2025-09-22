@@ -54,7 +54,23 @@ const Theme = (() => {
   return { init };
 })();
 
+const Greeting = (() => {
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good morning";
+    if (hour < 18) return "Good afternoon";
+    return "Good evening";
+  };
 
+  const init = () => {
+    const greetingEl = document.getElementById("greeting");
+    if (greetingEl) {
+      greetingEl.textContent = `${getGreeting()}, welcome to my portfolio.`;
+    }
+  };
+
+  return { init };
+})();
 
 const ContactForm = (() => {
   const init = () => {
@@ -97,4 +113,30 @@ const Footer = (() => {
   return { init };
 })();
 
+const Header = (() => {
+  const SCROLL_THRESHOLD = 16;
 
+  const init = () => {
+    const header = document.querySelector(".site-header");
+    if (!header) {
+      return;
+    }
+
+    const updateState = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > SCROLL_THRESHOLD);
+    };
+
+    updateState();
+    window.addEventListener("scroll", updateState, { passive: true });
+  };
+
+  return { init };
+})();
+
+window.addEventListener("DOMContentLoaded", () => {
+  Theme.init();
+  Greeting.init();
+  ContactForm.init();
+  Footer.init();
+  Header.init();
+});
