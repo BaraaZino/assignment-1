@@ -17,11 +17,10 @@ A single-page personal portfolio highlighting experience, projects, awards, and 
 ## Project Structure
 ```
 .
-├── assets/
-│   └── images/
-│       └── baraa_zino.jpg 
-|       └──assets/images/DSC_5707_with_watermark_50.jpg
-|       └──assets/images/OCR.jpg
+├── assets/images/  
+│           └── baraa_zino.jpg 
+|           └──assets/images/DSC_5707_with_watermark_50.jpg
+|           └──assets/images/OCR.jpg
 ├── css/
 │   └── styles.css
 ├── docs/
