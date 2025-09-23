@@ -1,4 +1,5 @@
 const Theme = (() => {
+  // Handles theme selection, persistence, and system preference sync.
   const STORAGE_KEY = "portfolio-theme";
 
   const getPreferredTheme = () => {
@@ -17,6 +18,7 @@ const Theme = (() => {
   };
 
   const toggleTheme = () => {
+    // Swap between light and dark modes on demand.
     const next = document.body.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(next);
   };
@@ -45,6 +47,7 @@ const Theme = (() => {
 
     const toggleButton = document.querySelector(".theme-toggle");
     if (toggleButton) {
+      // Let users flip the theme manually.
       toggleButton.addEventListener("click", toggleTheme);
     }
 
@@ -55,6 +58,7 @@ const Theme = (() => {
 })();
 
 const Greeting = (() => {
+  // Populates the hero greeting with a time-aware salutation.
   const getGreeting = () => {
     const hour = new Date().getHours();
     if (hour < 12) return "Good morning";
@@ -73,6 +77,7 @@ const Greeting = (() => {
 })();
 
 const ContactForm = (() => {
+  // Adds client-side validation feedback and friendly confirmation messaging.
   const init = () => {
     const form = document.getElementById("contact-form");
     const feedback = document.getElementById("form-feedback");
@@ -85,6 +90,7 @@ const ContactForm = (() => {
       event.preventDefault();
 
       if (!form.checkValidity()) {
+        // Highlight validation issues with a red status message.
         feedback.textContent = "Please fill out all required fields with valid information.";
         feedback.style.color = "#dc2626";
         return;
@@ -93,6 +99,7 @@ const ContactForm = (() => {
       const formData = new FormData(form);
       const name = formData.get("name");
 
+      // Thank the sender, using a fallback when the name is missing.
       feedback.textContent = `Thanks ${name || "there"}! Your message is on its way.`;
       feedback.style.color = "#16a34a";
       form.reset();
@@ -103,6 +110,7 @@ const ContactForm = (() => {
 })();
 
 const Footer = (() => {
+  // Updates the footer year dynamically to keep the copyright current.
   const init = () => {
     const yearSpan = document.getElementById("year");
     if (yearSpan) {
@@ -114,6 +122,7 @@ const Footer = (() => {
 })();
 
 const Header = (() => {
+  // Applies a scrolled state to the header after a small offset.
   const SCROLL_THRESHOLD = 16;
 
   const init = () => {
@@ -133,6 +142,7 @@ const Header = (() => {
   return { init };
 })();
 
+// Kick off all modules once the DOM is ready.
 window.addEventListener("DOMContentLoaded", () => {
   Theme.init();
   Greeting.init();
