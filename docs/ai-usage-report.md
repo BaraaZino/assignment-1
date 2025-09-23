@@ -1,33 +1,19 @@
 # AI Usage Report
 
-## Tools Utilized
-- **ChatGPT (OpenAI GPT-5 Codex)**
-  - Brainstormed page structure, responsive layout approach, and JavaScript features.
-  - helped me try multiple different approaches and testing different designs 
-  - Generated initial drafts for `index.html`, `css/styles.css`, and `js/script.js` with iterative refinement.
-  - Assisted in outlining documentation content for README and technical docs.
-  - Helped integrate my resume the webpage.
+## Development Assistant
+For this project, I utilized ChatGPT-5 Codex as a development assistant throughout the entire process.
 
-## Prompts and Iterations
-- Asked for help designing a responsive personal portfolio with required sections.
-- Requested suggestions for light/dark theme implementation, greeting logic, and form feedback handling.
-- Iteratively refined CSS to ensure consistent spacing, accessible contrast, and mobile behavior.
-- Used prompts to map CV bullet points into concise portfolio summaries and to style the awards showcase.
+## Iterative Build Process
+I began by building the webpage step by step, starting with the HTML structure, followed by CSS styling, and finally JavaScript functionality. With AI’s support, I was able to quickly test and implement different ideas for features and layout.
 
-## Benefits Observed
-- Accelerated scaffolding of HTML and CSS, reducing time spent on coding the basics and spending more time on the thinking part.
-- Helped draft documentation that clearly communicates setup, resume content, and learning outcomes.
+## Experimentation and Simplification
+Initially, I experimented with several advanced approaches suggested by the AI. While these solutions were effective, I decided to simplify and return to more foundational methods to ensure I fully understood each component. To do this, I created a new project file and repository (the one I ultimately submitted).
 
-## Challenges and Mitigations
-- I had many ideas that were hard to explain to the AI.
-- Sometimes the AI use some new things that I dont know, which require a lot of time to learn them on spot.
-- Ensured all AI-generated code was reviewed, formatted, and had good comments.
+## Knowledge Transfer
+From there, I transferred parts of the original code into the new project. With AI’s explanations, I was able to break down each section—first HTML, then CSS, and finally JavaScript—allowing me to clearly visualize and understand how each element worked independently before combining them into the final product.
 
-## Learning Outcomes
-- Practiced organizing responsive layouts with Grid and Flexbox.
-- Strengthened understanding of theme toggling patterns.
-- Improved confidence in documenting AI collaboration transparently and responsibly.
+## Documentation Support
+In addition to coding support, I used AI to assist with documentation. It helped me draft the README and technical documentation files. For the AI usage report, I first wrote a draft of my personal experience, then refined it with AI’s help to ensure it was professional, clear, and well-structured.
 
-## Responsible Usage Notes
-- Verified all AI-produced code manually and modified wording/structure to reflect my own voice.
-- Added comments only where needed and confirmed accessibility attributes before finalizing.
+## Overall Impact
+Overall, AI played a significant role in both the development and documentation stages of this project, acting as a guide, tutor, and writing assistant.
