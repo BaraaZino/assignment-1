@@ -13,7 +13,7 @@ Initially, I experimented with several advanced approaches suggested by the AI. 
 From there, I transferred parts of the original code into the new project. With AI’s explanations, I was able to break down each section—first HTML, then CSS, and finally JavaScript—allowing me to clearly visualize and understand how each element worked independently before combining them into the final product.
 
 ## Documentation Support
-In addition to coding support, I used AI to assist with documentation. It helped me draft the README and technical documentation files. For the AI usage report, I first wrote a draft of my personal experience, then refined it with AI’s help to ensure it was professional, clear, and well-structured.
+In addition to coding support, I used AI to assist with documentation. It helped me draft the README and technical documentation files. For the AI usage report, I first wrote a draft of my personal experience, then refined it with AI’s help to ensure it was professional, clear, and well-structured. With the help of AI I added the necessary comments in HTML and JS files.
 
 ## Overall Impact
 Overall, AI played a significant role in both the development and documentation stages of this project, acting as a guide, tutor, and writing assistant.
